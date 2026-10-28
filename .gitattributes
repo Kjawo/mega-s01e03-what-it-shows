@@ -1,0 +1,2 @@
+# Preserve generated HTML bytes, including embedded JavaScript string literals.
+*.html -text -diff

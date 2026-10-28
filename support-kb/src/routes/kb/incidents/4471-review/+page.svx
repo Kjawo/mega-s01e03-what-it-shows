@@ -1,0 +1,84 @@
+---
+layout: runbook
+title: '#4471 review: separate parser and form hint failures'
+owner: support desk
+status: reviewed-export
+reviewed: '2026-10-28'
+signature: 'Codex | MEGA S01E03 | 2026-10-28'
+---
+
+<script>
+  import CauseTable from '#lib/kb/CauseTable.svelte';
+  import QueueTimeline from '#lib/kb/QueueTimeline.svelte';
+  import DedupeExplorer from '#lib/kb/DedupeExplorer.svelte';
+  import Callout from '#lib/kb/Callout.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+</script>
+
+## Decision for the desk
+
+The original known-issue page combines distinct problems. Keep one engineering ticket for
+shared parser failures and another for the booking-v3 form hint. Match duplicates by cause
+using tenant locale, channel, and form version. A subject line or intake label cannot establish
+a common cause.
+
+<Callout kind="warn">
+This review covers the downloaded export dated 2026-10-04. The support desk continues to work;
+these counts are evidence for this snapshot, not a claim about the live queue. Refresh the
+export and recompute the views before acting on a later queue.
+</Callout>
+
+## What the data says
+
+<CauseTable ticket={4471} />
+
+The table deduplicates report ids, resolves each tenant from the directory, and groups using
+the supplied cause model. Browser locale and intake tags are preliminary guesses. Desk notes
+about one-day moves remain attached to their tenant-based group; they do not prove a separate
+timezone defect.
+
+The ownership column reflects the original desk export. The separate GitHub issues below now
+track the two corrections identified by this review.
+
+## Two fixes
+
+### Shared parser
+
+[Track the parser correction in issue #1](https://github.com/Kjawo/mega-s01e03-what-it-shows/issues/1).
+
+Day-first tenants pass dates to a shared month-first parser. An app booking for 7 April can
+become an invite for 4 July. Parse the explicit tenant format and normalize the stored date.
+Recheck app, email, and booking-v2 flows. Different subject lines can still describe this cause.
+
+### booking-v3 hint
+
+[Track the form hint correction in issue #2](https://github.com/Kjawo/mega-s01e03-what-it-shows/issues/2).
+
+The form prints MM/DD/YYYY while reading dates in the day-first tenant order. A customer who
+follows the hint for 1 June can receive 6 January. Generate the displayed hint and input parsing
+from the same tenant format. The affected path is the form for booking-v3 tenants; fixing the
+shared parser alone does not remove this contradiction.
+
+## Received versus merged
+
+<QueueTimeline ticket={4471} />
+
+Received time is when customers reported the symptom. Merge time is when the desk filed it
+under the large ticket. A batch of merges does not prove a fresh spike of customer failures.
+
+## Replace the subject-only rule
+
+Decision 0001 is accepted and must remain unchanged. Propose a new numbered decision that
+supersedes it. Identical subjects can hide different causes; different subjects can share one
+cause. If a tenant is unknown or evidence is insufficient, keep the report unplaced for review.
+
+<DedupeExplorer />
+
+## Evidence and limits
+
+The original incident page and old triage rule are historical documents. Their prose is not a
+substitute for the tables, charts, and cause logic. The export does not include a working
+production environment, so this review identifies the modeled failures and corrections rather
+than claiming that a deployed fix has passed. Each correction is tracked in its own linked issue.
+
+<RenderStamp {signature} />

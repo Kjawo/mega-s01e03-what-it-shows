@@ -1,0 +1,100 @@
+{
+  "builtAt": "2026-10-28T13:43:30.283Z",
+  "sourceRows": 427,
+  "uniqueReports": 412,
+  "counts": {
+    "parser": 379,
+    "hint": 33
+  },
+  "independentMembershipMatched": true,
+  "locales": [
+    {
+      "handle": "alder.physio",
+      "locale": "de-DE",
+      "dayFirst": true
+    },
+    {
+      "handle": "copper.studio",
+      "locale": "es-ES",
+      "dayFirst": true
+    },
+    {
+      "handle": "harbour.dental",
+      "locale": "en-GB",
+      "dayFirst": true
+    },
+    {
+      "handle": "kettle.books",
+      "locale": "nl-NL",
+      "dayFirst": true
+    },
+    {
+      "handle": "lantern.row",
+      "locale": "cs-CZ",
+      "dayFirst": true
+    },
+    {
+      "handle": "long.table",
+      "locale": "it-IT",
+      "dayFirst": true
+    },
+    {
+      "handle": "morrow.tax",
+      "locale": "fr-FR",
+      "dayFirst": true
+    },
+    {
+      "handle": "nine.lanterns",
+      "locale": "pl-PL",
+      "dayFirst": true
+    },
+    {
+      "handle": "pale.harbour",
+      "locale": "pt-PT",
+      "dayFirst": true
+    },
+    {
+      "handle": "ridge.clinic",
+      "locale": "da-DK",
+      "dayFirst": true
+    },
+    {
+      "handle": "stone.and.sons",
+      "locale": "en-IE",
+      "dayFirst": true
+    }
+  ],
+  "outputs": [
+    {
+      "route": "/kb",
+      "file": "rendered/kb/index.html",
+      "sha256": "a50f41b23f0979c94f2e85dadfa9dce29d3325cabb61219e70ca08d8360068c1",
+      "signature": null
+    },
+    {
+      "route": "/kb/decisions/0001-dedupe-by-subject",
+      "file": "rendered/kb/decisions/0001-dedupe-by-subject/index.html",
+      "sha256": "d2d33064311d87ac11dedcc2384dc9e98d4431f812c87050ab1ee0f9d4ea592b",
+      "signature": null
+    },
+    {
+      "route": "/kb/incidents/4471-review",
+      "file": "rendered/kb/incidents/4471-review/index.html",
+      "sha256": "9f584c269df6b5974699aadd20ca84e44a08592e5780aa5f199008a4b455ef62",
+      "signature": "Codex | MEGA S01E03 | 2026-10-28"
+    },
+    {
+      "route": "/kb/incidents/4471",
+      "file": "rendered/kb/incidents/4471/index.html",
+      "sha256": "6122bc5c3ed5aa22704aa49ba6ace1141a9ed5404b451bddc637328158b46325",
+      "signature": null
+    },
+    {
+      "route": "/kb/triage/dedupe",
+      "file": "rendered/kb/triage/dedupe/index.html",
+      "sha256": "5423c1b252ec74bdbfc9e3e8a35a4fa6fa5fc45bc19554f388ec8eda1be85078",
+      "signature": null
+    }
+  ],
+  "compilerWarnings": []
+}

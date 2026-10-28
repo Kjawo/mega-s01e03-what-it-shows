@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-10-28T13:43:31.740Z",
+  "hydrated": true,
+  "expectedRef": "DR-BAT8-HAZZ",
+  "causeRows": [
+    "parser379parser ×356 · hint ×23112026-04-01 → 2026-10-04#4471",
+    "hint33hint ×18 · parser ×1532026-04-17 → 2026-09-22not this ticket — no ticket of its own"
+  ],
+  "sourceCountsMatchRenderedTable": true,
+  "oneDayNotesPreserved": true,
+  "weeklyTimelineBars": 54,
+  "dedupeExamples": 5,
+  "interactiveCauseChangeVerified": true,
+  "browserErrors": [],
+  "browserWarnings": [],
+  "screenshot": "rendered-review.png"
+}

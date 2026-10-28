@@ -1,0 +1,11 @@
+{
+  "name": "mega-s01e03-local-renderer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "svelte": "5.57.3",
+    "mdsvex": "0.12.8",
+    "esbuild": "0.28.2"
+  }
+}
