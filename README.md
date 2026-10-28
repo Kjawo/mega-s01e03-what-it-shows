@@ -13,7 +13,9 @@ one signed incident page, its rendered HTML, and one GitHub issue for each cause
 
 The rendered HTML contains the actual server-rendered tables, timeline, and signature stamp.
 Its adjacent +page.js provides interactive behavior; open +page.html after downloading the
-repository. The signature is Kjawo; the supplied deskRef implementation derives DR-1D35-RY95.
+repository. The page's frontmatter signature is the exact ticket issued by start-challenge.
+The supplied deskRef implementation derives the visible stamp from that signature; the
+browser verification records its value without repeating the ticket in the verification log.
 
 ## Evidence
 

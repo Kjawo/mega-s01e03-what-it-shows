@@ -38,4 +38,4 @@ Evidence: src/lib/kb/causes.ts; src/lib/kb/locales.ts; src/lib/data/tenants/; an
 
 - Source (.svx): https://github.com/Kjawo/mega-s01e03-what-it-shows/blob/main/src/routes/kb/incidents/4471/%2Bpage.svx
 - Rendered HTML: https://github.com/Kjawo/mega-s01e03-what-it-shows/blob/main/src/routes/kb/incidents/4471/%2Bpage.html
-- Signature: Kjawo; rendered desk reference: DR-1D35-RY95.
+- Course-issued signature in page frontmatter; rendered desk reference: DR-6Z5H-4170.

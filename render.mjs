@@ -108,7 +108,7 @@ for (const page of pages) {
     rendered.head + '</head><body><div id="app">' + rendered.body + '</div><script defer src="./+page.js"></script></body></html>\n';
   await fs.writeFile(file, snapshot);
   await fs.writeFile(scriptFile, client.outputFiles[0].text);
-  outputs.push({ route: page.route, file: posix(path.relative(repo, file)), sha256: createHash('sha256').update(snapshot).digest('hex'), signature: page.metadata.signature || null });
+  outputs.push({ route: page.route, file: posix(path.relative(repo, file)), sha256: createHash('sha256').update(snapshot).digest('hex'), signaturePresent: Boolean(page.metadata.signature) });
 }
 
 const analysisBuild = await build({ ...common, entryPoints: [path.join(src, 'lib/kb/causes.ts')], platform: 'node', write: false });

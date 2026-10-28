@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-10-28T14:18:55.085Z",
+  "checkedAt": "2026-10-28T14:22:56.304Z",
   "hydrated": true,
-  "expectedRef": "DR-1D35-RY95",
+  "expectedRef": "DR-6Z5H-4170",
   "causeRows": [
     "parser379parser ×356 · hint ×23112026-04-01 → 2026-10-04#4471",
     "hint33hint ×18 · parser ×1532026-04-17 → 2026-09-22not this ticket — no ticket of its own"

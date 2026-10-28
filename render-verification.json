@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-28T14:18:53.354Z",
+  "builtAt": "2026-10-28T14:22:54.563Z",
   "sourceRows": 427,
   "uniqueReports": 412,
   "counts": {
@@ -68,8 +68,8 @@
     {
       "route": "/kb/incidents/4471",
       "file": "src/routes/kb/incidents/4471/+page.html",
-      "sha256": "d6508de823517d0d5ea605f040f63d5d8df85264f6b576650563bab91316d56e",
-      "signature": "Kjawo"
+      "sha256": "92bc40e862ac3600f319d8f61f0f7e3f45749d26f2c628e939860fd77fa5ef01",
+      "signaturePresent": true
     }
   ],
   "compilerWarnings": []
