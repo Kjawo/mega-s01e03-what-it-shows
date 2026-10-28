@@ -1,5 +1,15 @@
 # Shared parser reads day-first tenant dates as MM/DD/YYYY — 379 reports
 
+## Resolution — engineering update, 2026-10-05
+
+**Status: FIXED.** Closed as completed.
+
+Engineering summary: `fix(dates): parse dd/mm for eu locales`.
+
+The desk records source ticket #4471 closed on 5 October. This is the engineering-reported parser fix, not an independent production test.
+
+[Source: current engineering update on the MEGA challenge page](https://hq.mega.dev/challenges/what-it-shows).
+
 ## Scope and evidence
 
 - Source ticket: #4471; 379 unique reports in the 2026-10-04 KB export, across 11 tenants.

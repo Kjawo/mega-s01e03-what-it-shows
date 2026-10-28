@@ -1,5 +1,15 @@
 # booking-v3 date hint conflicts with day-first tenant parsing — 33 reports
 
+## Resolution — engineering update, 2026-10-05
+
+**Status: WON'T FIX.** Closed as not planned; label: wontfix.
+
+Engineering reason: **booking-v3 form retired**.
+
+The affected form was removed rather than its misleading hint being corrected. Do not report this as a delivered hint fix. The desk records source ticket #4471 closed on 5 October.
+
+[Source: current engineering update on the MEGA challenge page](https://hq.mega.dev/challenges/what-it-shows).
+
 ## Scope and evidence
 
 - Source ticket: #4471; 33 unique reports in the 2026-10-04 KB export.
