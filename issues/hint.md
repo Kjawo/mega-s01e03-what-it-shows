@@ -32,3 +32,9 @@ The form instructs customers to enter a date in an order it does not read. Gener
 Do not merge by matching subject alone. An app report and a booking-v3 form report from the same tenant can have different causes; different tenants' form reports can also differ by form version. Accepted decision 0001 must be superseded by a new decision record, not silently rewritten.
 
 Evidence: src/lib/kb/causes.ts (DATE_HINT and causeOf); src/lib/kb/locales.ts; src/lib/data/tenants/; analysis.json records every included report id.
+
+## Knowledge base page
+
+- Source (.svx): https://github.com/Kjawo/mega-s01e03-what-it-shows/blob/main/src/routes/kb/incidents/4471/%2Bpage.svx
+- Rendered HTML: https://github.com/Kjawo/mega-s01e03-what-it-shows/blob/main/src/routes/kb/incidents/4471/%2Bpage.html
+- Signature: Kjawo; rendered desk reference: DR-1D35-RY95.
