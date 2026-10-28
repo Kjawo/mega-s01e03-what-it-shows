@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-28T13:43:30.283Z",
+  "builtAt": "2026-10-28T13:48:19.345Z",
   "sourceRows": 427,
   "uniqueReports": 412,
   "counts": {
@@ -68,7 +68,7 @@
     {
       "route": "/kb",
       "file": "rendered/kb/index.html",
-      "sha256": "a50f41b23f0979c94f2e85dadfa9dce29d3325cabb61219e70ca08d8360068c1",
+      "sha256": "b534e1c45bb0ac2f18a05972966ee6c2b8967ac5b2cfed64fd6192191be4b3f5",
       "signature": null
     },
     {
@@ -80,7 +80,7 @@
     {
       "route": "/kb/incidents/4471-review",
       "file": "rendered/kb/incidents/4471-review/index.html",
-      "sha256": "9f584c269df6b5974699aadd20ca84e44a08592e5780aa5f199008a4b455ef62",
+      "sha256": "b0807a934e68bc23cc79fcdf62dc0ed31f71672942c7b33a1ccd55cf4d10cfb3",
       "signature": "Codex | MEGA S01E03 | 2026-10-28"
     },
     {

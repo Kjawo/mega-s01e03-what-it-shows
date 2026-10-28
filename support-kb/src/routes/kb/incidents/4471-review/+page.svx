@@ -2,7 +2,7 @@
 layout: runbook
 title: '#4471 review: separate parser and form hint failures'
 owner: support desk
-status: reviewed-export
+status: resolved
 reviewed: '2026-10-28'
 signature: 'Codex | MEGA S01E03 | 2026-10-28'
 ---
@@ -17,15 +17,27 @@ signature: 'Codex | MEGA S01E03 | 2026-10-28'
 
 ## Decision for the desk
 
-The original known-issue page combines distinct problems. Keep one engineering ticket for
-shared parser failures and another for the booking-v3 form hint. Match duplicates by cause
-using tenant locale, channel, and form version. A subject line or intake label cannot establish
-a common cause.
+The original known-issue page combines distinct problems. This review tracks the shared parser
+and the booking-v3 form hint separately. Match duplicates by cause using tenant locale,
+channel, and form version. A subject line or intake label cannot establish a common cause.
+
+## Engineering update: 5 October
+
+The [course's engineering update](https://hq.mega.dev/challenges/what-it-shows) records #4471
+closed on 2026-10-05, with different outcomes for the two causes:
+
+- Parser: **FIXED** — `fix(dates): parse dd/mm for eu locales`. The corresponding
+  [GitHub issue #1](https://github.com/Kjawo/mega-s01e03-what-it-shows/issues/1) is closed as completed.
+- Hint: **WON'T FIX** — booking-v3 form retired. The corresponding
+  [GitHub issue #2](https://github.com/Kjawo/mega-s01e03-what-it-shows/issues/2) is closed as not planned.
+
+Retiring the form removes the affected path; it does not mean the hint was corrected. These
+outcomes come from the engineering update, not an independent test of a deployed application.
 
 <Callout kind="warn">
-This review covers the downloaded export dated 2026-10-04. The support desk continues to work;
-these counts are evidence for this snapshot, not a claim about the live queue. Refresh the
-export and recompute the views before acting on a later queue.
+Report counts cover the downloaded export dated 2026-10-04. The later engineering update
+supersedes its open-ticket status. Preserve the historical counts separately from the
+closure evidence; they are not live queue totals.
 </Callout>
 
 ## What the data says
@@ -40,7 +52,7 @@ timezone defect.
 The ownership column reflects the original desk export. The separate GitHub issues below now
 track the two corrections identified by this review.
 
-## Two fixes
+## Two causes and their outcomes
 
 ### Shared parser
 
@@ -49,6 +61,8 @@ track the two corrections identified by this review.
 Day-first tenants pass dates to a shared month-first parser. An app booking for 7 April can
 become an invite for 4 July. Parse the explicit tenant format and normalize the stored date.
 Recheck app, email, and booking-v2 flows. Different subject lines can still describe this cause.
+Engineering reports the parser fix complete; this review does not claim to have deployed or
+independently verified that fix.
 
 ### booking-v3 hint
 
@@ -58,6 +72,8 @@ The form prints MM/DD/YYYY while reading dates in the day-first tenant order. A 
 follows the hint for 1 June can receive 6 January. Generate the displayed hint and input parsing
 from the same tenant format. The affected path is the form for booking-v3 tenants; fixing the
 shared parser alone does not remove this contradiction.
+Engineering retired booking-v3 instead of changing this hint, so its closure is not planned
+rather than completed.
 
 ## Received versus merged
 

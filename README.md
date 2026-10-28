@@ -4,16 +4,21 @@ Review of the support desk's ticket #4471, using the supplied knowledge-base exp
 
 ## Results
 
-| Cause | Unique reports | Proposed ticket |
-| --- | ---: | --- |
-| Shared parser reads day-first dates as month first | 379 | [Issue #1](https://github.com/Kjawo/mega-s01e03-what-it-shows/issues/1) |
-| booking-v3 hint conflicts with day-first form parsing | 33 | [Issue #2](https://github.com/Kjawo/mega-s01e03-what-it-shows/issues/2) |
-| Total | 412 | |
+| Cause | Unique reports | Ticket | Engineering outcome |
+| --- | ---: | --- | --- |
+| Shared parser reads day-first dates as month first | 379 | [Issue #1](https://github.com/Kjawo/mega-s01e03-what-it-shows/issues/1) | Fixed; closed as completed |
+| booking-v3 hint conflicts with day-first form parsing | 33 | [Issue #2](https://github.com/Kjawo/mega-s01e03-what-it-shows/issues/2) | Form retired; closed as not planned |
+| Total | 412 | | |
 
 The export has 427 rows: 15 are repeated copies of an existing report id. There are no
 conflicting duplicate records. Tenant locale, form version, and channel determine cause;
 38 intake tags disagree with the supplied cause model. Counts cover the export dated
 2026-10-04 and were verified on 2026-10-28. They are not live queue totals.
+
+The [engineering update](https://hq.mega.dev/challenges/what-it-shows), revealed after the
+course accepted the cause tickets, records #4471 closed on 2026-10-05. It distinguishes the
+parser fix from retirement of booking-v3. The rendered review incorporates that later evidence
+while preserving the original export. Neither outcome was independently tested in production.
 
 ## Deliverables
 
