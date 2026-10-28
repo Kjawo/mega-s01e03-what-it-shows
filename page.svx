@@ -4,7 +4,7 @@ title: '#4471 review: separate parser and form hint failures'
 owner: support desk
 status: resolved
 reviewed: '2026-10-28'
-signature: 'Codex | MEGA S01E03 | 2026-10-28'
+signature: 'Kjawo'
 ---
 
 <script>

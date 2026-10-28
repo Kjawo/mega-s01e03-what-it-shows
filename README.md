@@ -30,8 +30,9 @@ while preserving the original export. Neither outcome was independently tested i
 - [Original-model execution and build results](render-verification.json)
 - [Browser checks](browser-verification.json)
 
-The page's signature is `Codex | MEGA S01E03 | 2026-10-28`; the original RenderStamp
-component derives desk reference `DR-BAT8-HAZZ` from it. The original KB files remain
+The page's signature is `Kjawo`, the repository owner's verified GitHub handle. The original
+RenderStamp component derives the desk reference from it; browser-verification.json records
+the computed value. The original KB files remain
 unchanged. The accepted subject-only decision is preserved; the review recommends a
 new decision rather than rewriting the historical one.
 

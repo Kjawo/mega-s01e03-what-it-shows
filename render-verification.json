@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-28T13:56:30.289Z",
+  "builtAt": "2026-10-28T13:59:05.004Z",
   "sourceRows": 427,
   "uniqueReports": 412,
   "counts": {
@@ -68,7 +68,7 @@
     {
       "route": "/kb",
       "file": "rendered/kb/index.html",
-      "sha256": "b267dd9361e93f2b473df2814f342e9e6195e0fa3d288c02bb245b3cb32218f3",
+      "sha256": "6cb1b5b46ba7a36ff425013aecc66b8af2ea19baa8bc8cf5e6817d36580504e5",
       "signature": null
     },
     {
@@ -80,8 +80,8 @@
     {
       "route": "/kb/incidents/4471-review",
       "file": "rendered/kb/incidents/4471-review/index.html",
-      "sha256": "3ae8b624103e4f8802544ca6dc2b5a8038c1d551918523b3f24cad84b4c5d8d1",
-      "signature": "Codex | MEGA S01E03 | 2026-10-28"
+      "sha256": "7fd4e38cbdc761464213be3ddce4e9539ee91ea6323136a4a17d534c07944e6b",
+      "signature": "Kjawo"
     },
     {
       "route": "/kb/incidents/4471",
