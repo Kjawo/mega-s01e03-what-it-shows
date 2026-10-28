@@ -22,7 +22,7 @@ while preserving the original export. Neither outcome was independently tested i
 
 ## Deliverables
 
-- [New signed KB page](support-kb/src/routes/kb/incidents/4471-review/+page.svx)
+- [New signed KB page](src/routes/kb/incidents/4471-review/+page.svx)
 - [Rendered page](rendered.html), including the working cause explorer
 - [Screenshot](rendered-review.png)
 - [Report membership and independent count analysis](analysis.json)

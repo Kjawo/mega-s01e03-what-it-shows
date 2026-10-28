@@ -8,7 +8,7 @@ import { compile as compileMarkdown } from 'mdsvex';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const repo = path.resolve(process.argv[2] || process.cwd());
-const kb = path.join(repo, 'support-kb');
+const kb = repo;
 const src = path.join(kb, 'src');
 const out = path.join(repo, 'rendered');
 const warnings = new Set();

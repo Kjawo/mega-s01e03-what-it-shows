@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-28T13:48:19.345Z",
+  "builtAt": "2026-10-28T13:52:21.903Z",
   "sourceRows": 427,
   "uniqueReports": 412,
   "counts": {
@@ -68,31 +68,31 @@
     {
       "route": "/kb",
       "file": "rendered/kb/index.html",
-      "sha256": "b534e1c45bb0ac2f18a05972966ee6c2b8967ac5b2cfed64fd6192191be4b3f5",
+      "sha256": "b267dd9361e93f2b473df2814f342e9e6195e0fa3d288c02bb245b3cb32218f3",
       "signature": null
     },
     {
       "route": "/kb/decisions/0001-dedupe-by-subject",
       "file": "rendered/kb/decisions/0001-dedupe-by-subject/index.html",
-      "sha256": "d2d33064311d87ac11dedcc2384dc9e98d4431f812c87050ab1ee0f9d4ea592b",
+      "sha256": "5c4513902ca0eb3364e9ce0815054b31d35bd4148daea71053dcc0c7da226a81",
       "signature": null
     },
     {
       "route": "/kb/incidents/4471-review",
       "file": "rendered/kb/incidents/4471-review/index.html",
-      "sha256": "b0807a934e68bc23cc79fcdf62dc0ed31f71672942c7b33a1ccd55cf4d10cfb3",
+      "sha256": "3ae8b624103e4f8802544ca6dc2b5a8038c1d551918523b3f24cad84b4c5d8d1",
       "signature": "Codex | MEGA S01E03 | 2026-10-28"
     },
     {
       "route": "/kb/incidents/4471",
       "file": "rendered/kb/incidents/4471/index.html",
-      "sha256": "6122bc5c3ed5aa22704aa49ba6ace1141a9ed5404b451bddc637328158b46325",
+      "sha256": "55c32311235d891ec302d9daada43417c5f0cf9d0093c35158ebb1f257a9a6b2",
       "signature": null
     },
     {
       "route": "/kb/triage/dedupe",
       "file": "rendered/kb/triage/dedupe/index.html",
-      "sha256": "5423c1b252ec74bdbfc9e3e8a35a4fa6fa5fc45bc19554f388ec8eda1be85078",
+      "sha256": "65b47348df5dc2e912c5b97d83d35d698d1c2188430a84d87734d321d1fa7df9",
       "signature": null
     }
   ],

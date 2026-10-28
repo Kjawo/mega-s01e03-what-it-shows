@@ -32,4 +32,4 @@ Invites and reminders reach customers on the wrong date. Parse an explicit, tena
 
 Five reports were read by the desk as a one-day move: R-41202, R-41209, R-41236, R-41344, R-41620. The supplied cause model files them here; retain their symptom notes without counting them again or asserting an unproved timezone cause.
 
-Evidence: support-kb/src/lib/kb/causes.ts; support-kb/src/lib/kb/locales.ts; support-kb/src/lib/data/tenants/; analysis.json records every included report id.
+Evidence: src/lib/kb/causes.ts; src/lib/kb/locales.ts; src/lib/data/tenants/; analysis.json records every included report id.
