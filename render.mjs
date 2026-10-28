@@ -108,7 +108,11 @@ for (const page of pages) {
   const file = path.join(out, page.route.slice(1), 'index.html');
   await fs.mkdir(path.dirname(file), { recursive: true });
   await fs.writeFile(file, snapshot);
-  if (page.route === '/kb/incidents/4471-review') await fs.writeFile(path.join(repo, 'rendered.html'), snapshot);
+  if (page.route === '/kb/incidents/4471-review') {
+    await fs.writeFile(path.join(repo, 'rendered.html'), snapshot);
+    await fs.writeFile(path.join(repo, 'page.html'), snapshot);
+    await fs.copyFile(sourceFile, path.join(repo, 'page.svx'));
+  }
   outputs.push({ route: page.route, file: posix(path.relative(repo, file)), sha256: createHash('sha256').update(snapshot).digest('hex'), signature: page.metadata.signature || null });
 }
 

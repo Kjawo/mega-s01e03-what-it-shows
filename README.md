@@ -22,6 +22,7 @@ while preserving the original export. Neither outcome was independently tested i
 
 ## Deliverables
 
+- Standalone entry files: [page.svx](page.svx) and [page.html](page.html), generated from the same KB route
 - [New signed KB page](src/routes/kb/incidents/4471-review/+page.svx)
 - [Rendered page](rendered.html), including the working cause explorer
 - [Screenshot](rendered-review.png)
