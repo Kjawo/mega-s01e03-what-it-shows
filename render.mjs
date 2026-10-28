@@ -21,7 +21,7 @@ async function filesUnder(directory) {
     : [path.join(directory, entry.name)]))).flat().sort();
 }
 
-const pageFiles = (await filesUnder(path.join(src, 'routes/kb'))).filter((p) => p.endsWith('+page.svx'));
+const pageFiles = [path.join(src, 'routes/kb/incidents/4471/+page.svx')];
 const tenantFiles = (await fs.readdir(path.join(src, 'lib/data/tenants'))).filter((p) => p.endsWith('.json')).sort();
 
 function expandGlobs(code) {
@@ -100,19 +100,14 @@ for (const page of pages) {
   const sourceFile = path.join(src, 'routes', page.route.slice(1), '+page.svx');
   const client = await build({ ...common,
     stdin: { contents: `import { hydrate } from 'svelte'; import Page from ${JSON.stringify(posix(sourceFile))}; hydrate(Page, { target: document.getElementById('app') }); window.__kbReady = true;`, resolveDir: here, sourcefile: 'kb-client-entry.js' },
-    platform: 'browser', conditions: ['browser'], plugins: [sourcePlugin('client')], write: false, minify: true });
+    platform: 'browser', format: 'iife', conditions: ['browser'], plugins: [sourcePlugin('client')], write: false, minify: true });
   const rendered = render(page.component);
+  const file = sourceFile.replace(/\.svx$/, '.html');
+  const scriptFile = sourceFile.replace(/\.svx$/, '.js');
   const snapshot = '<!doctype html>\n<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">' +
-    rendered.head + '</head><body><div id="app">' + rendered.body + '</div><script type="module">' +
-    client.outputFiles[0].text.replaceAll('</script', '<\\/script') + '</script></body></html>\n';
-  const file = path.join(out, page.route.slice(1), 'index.html');
-  await fs.mkdir(path.dirname(file), { recursive: true });
+    rendered.head + '</head><body><div id="app">' + rendered.body + '</div><script defer src="./+page.js"></script></body></html>\n';
   await fs.writeFile(file, snapshot);
-  if (page.route === '/kb/incidents/4471-review') {
-    await fs.writeFile(path.join(repo, 'rendered.html'), snapshot);
-    await fs.writeFile(path.join(repo, 'page.html'), snapshot);
-    await fs.copyFile(sourceFile, path.join(repo, 'page.svx'));
-  }
+  await fs.writeFile(scriptFile, client.outputFiles[0].text);
   outputs.push({ route: page.route, file: posix(path.relative(repo, file)), sha256: createHash('sha256').update(snapshot).digest('hex'), signature: page.metadata.signature || null });
 }
 

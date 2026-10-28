@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-28T14:01:12.195Z",
+  "builtAt": "2026-10-28T14:18:53.354Z",
   "sourceRows": 427,
   "uniqueReports": 412,
   "counts": {
@@ -66,34 +66,10 @@
   ],
   "outputs": [
     {
-      "route": "/kb",
-      "file": "rendered/kb/index.html",
-      "sha256": "02966f7e4f1b5f9882ad537b74704b7f044ccebd1a1439ab7ffbf392cf833b75",
-      "signature": null
-    },
-    {
-      "route": "/kb/decisions/0001-dedupe-by-subject",
-      "file": "rendered/kb/decisions/0001-dedupe-by-subject/index.html",
-      "sha256": "5c4513902ca0eb3364e9ce0815054b31d35bd4148daea71053dcc0c7da226a81",
-      "signature": null
-    },
-    {
-      "route": "/kb/incidents/4471-review",
-      "file": "rendered/kb/incidents/4471-review/index.html",
-      "sha256": "7fd4e38cbdc761464213be3ddce4e9539ee91ea6323136a4a17d534c07944e6b",
-      "signature": "Kjawo"
-    },
-    {
       "route": "/kb/incidents/4471",
-      "file": "rendered/kb/incidents/4471/index.html",
-      "sha256": "7fd4e38cbdc761464213be3ddce4e9539ee91ea6323136a4a17d534c07944e6b",
+      "file": "src/routes/kb/incidents/4471/+page.html",
+      "sha256": "d6508de823517d0d5ea605f040f63d5d8df85264f6b576650563bab91316d56e",
       "signature": "Kjawo"
-    },
-    {
-      "route": "/kb/triage/dedupe",
-      "file": "rendered/kb/triage/dedupe/index.html",
-      "sha256": "65b47348df5dc2e912c5b97d83d35d698d1c2188430a84d87734d321d1fa7df9",
-      "signature": null
     }
   ],
   "compilerWarnings": []
