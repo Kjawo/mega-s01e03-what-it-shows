@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-28T13:59:05.004Z",
+  "builtAt": "2026-10-28T14:01:12.195Z",
   "sourceRows": 427,
   "uniqueReports": 412,
   "counts": {
@@ -68,7 +68,7 @@
     {
       "route": "/kb",
       "file": "rendered/kb/index.html",
-      "sha256": "6cb1b5b46ba7a36ff425013aecc66b8af2ea19baa8bc8cf5e6817d36580504e5",
+      "sha256": "02966f7e4f1b5f9882ad537b74704b7f044ccebd1a1439ab7ffbf392cf833b75",
       "signature": null
     },
     {
@@ -86,8 +86,8 @@
     {
       "route": "/kb/incidents/4471",
       "file": "rendered/kb/incidents/4471/index.html",
-      "sha256": "55c32311235d891ec302d9daada43417c5f0cf9d0093c35158ebb1f257a9a6b2",
-      "signature": null
+      "sha256": "7fd4e38cbdc761464213be3ddce4e9539ee91ea6323136a4a17d534c07944e6b",
+      "signature": "Kjawo"
     },
     {
       "route": "/kb/triage/dedupe",

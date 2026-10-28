@@ -23,7 +23,8 @@ while preserving the original export. Neither outcome was independently tested i
 ## Deliverables
 
 - Standalone entry files: [page.svx](page.svx) and [page.html](page.html), generated from the same KB route
-- [New signed KB page](src/routes/kb/incidents/4471-review/+page.svx)
+- [Canonical signed incident page](src/routes/kb/incidents/4471/+page.svx)
+- [Review route](src/routes/kb/incidents/4471-review/+page.svx), retained for existing links
 - [Rendered page](rendered.html), including the working cause explorer
 - [Screenshot](rendered-review.png)
 - [Report membership and independent count analysis](analysis.json)
@@ -32,8 +33,7 @@ while preserving the original export. Neither outcome was independently tested i
 
 The page's signature is `Kjawo`, the repository owner's verified GitHub handle. The original
 RenderStamp component derives the desk reference from it; browser-verification.json records
-the computed value. The original KB files remain
-unchanged. The accepted subject-only decision is preserved; the review recommends a
+the computed value. The canonical incident page is updated to the reviewed report; the other supplied KB files retain their original bytes. The original ZIP is preserved separately. The accepted subject-only decision is preserved; the review recommends a
 new decision rather than rewriting the historical one.
 
 ## Rebuild
